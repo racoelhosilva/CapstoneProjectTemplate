@@ -29,7 +29,7 @@ I've published this exact template into the Overleaf Gallery, where users can lo
 ### Zip/Import
 
 1. Download this repository as a .zip file.
-2. In Overleaf, import the .zip as a new project.
-3. Continue the project from there.
+2. In Overleaf, select `New Project` > `Upload Project` and import the .zip file.
+3. Continue the project from there (you might want to change the title of the project).
 
 > Best of luck on your Capstone Project :)
