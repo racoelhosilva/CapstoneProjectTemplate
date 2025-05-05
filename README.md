@@ -4,6 +4,8 @@ This template was developed by me (Rodrigo) for the Capstone Project of the Bach
 
 The goal is to maintain the original end document structure but give it a different appearance and better file structure. Most commands have associated explanations and there is a referencing guide in the `content/1_introduction.tex` file.
 
+I first made this template during the Summer of 2024 for my Capstone Project and have since been using a similar one for other reports.
+
 Hope you enjoy it, and feel free to make changes as needed :)
 
 ## Usage
@@ -31,5 +33,16 @@ I've published this exact template into the Overleaf Gallery, where users can lo
 1. Download this repository as a .zip file.
 2. In Overleaf, select `New Project` > `Upload Project` and import the .zip file.
 3. Continue the project from there (you might want to change the title of the project).
+
+## Features
+
+This template was remade from scratch, but the overall structure was based on the one presented on the Capstone Project website. The main differences are:
+
+- Folder structure: the files for the different sections are separated in the `content` folder and used by `main.tex`.
+- Labelling: in large projects, correctly labelling the sections, figures, and references is very important. This template provides an approach to manage this.
+- Appearance: the footers, headers, code blocks, and hyper-references have been slightly changed for a more modern look.
+- Customization: most settings can be easily changed in the `main.tex` file, which contains descriptions of most of the commands.
+
+A preview of this template can be seen **[here](example.pdf)**.
 
 > Best of luck on your Capstone Project :)
