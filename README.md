@@ -9,8 +9,8 @@ Hope you enjoy it, and feel free to make changes as needed :)
 ## Usage
 
 > [!IMPORTANT]  
-> This template uses packages that require the XeLaTeX compiler.  
-> If you are using Overleaf, simply switch to that option in the settings.  
+> This template uses packages that require the **XeLaTeX compiler**.  
+> If you are using **Overleaf**, simply **switch to that option in the settings**.  
 > However, if running this project locally, some more packages and setup might be necessary.
 
 Although this template can be used locally by simply cloning the repository, I recommend using Overleaf for the Capstone Project.
