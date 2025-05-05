@@ -1,0 +1,167 @@
+% Capstone Project Template
+% 
+% Author: Rodrigo Albergaria Coelho e Silva
+% Source: https://github.com/racoelhosilva/CapstoneProjectTemplate
+%
+% This template was developed by me (Rodrigo) for the Capstone Project of the Bachelor's in Informatics and Computing Engineering (L.EIC) at FEUP
+% The goal is to maintain the original end document structure but give it a different appearance and better file structure
+% Most commands have associated explanations and there is a referencing guide in the content/1_introduction.tex file
+% Hope you enjoy it and feel free to make changes as needed :)
+
+% Define font and page size for article document
+\documentclass[12pt, a4paper]{article}
+
+% Define some variables that will be used in different places
+
+% Title of the Capstone Project
+\newcommand{\projecttitle}{Project Title}
+
+% Name of the Student
+\newcommand{\studentname}{Student Name}
+% Note: in case there are multiple students, it is recommended to write the names manually in the necessary sections
+
+% Used to set dimensions of the page
+\usepackage[a4paper,left=35mm, right=35mm, top=40mm, bottom=35mm]{geometry}
+
+% Disable page breaks in the middle of paragaphs
+%\widowpenalties 1 10000
+
+% Used to enable different languages
+\usepackage[english]{babel}
+
+% Used to enable indentation on first paragraph
+\usepackage{indentfirst}
+
+% Used to customize the fonts
+\usepackage{fontspec}
+%\setmainfont{}
+%\setsansfont{}
+%\setmonofont{}
+% Note: if using custom fonts, it is recommended to leave them on a fonts/ folder
+
+% Used for cover date format
+\usepackage{datetime}
+% Definition of a month yyyy date format
+\newdateformat{monthyear}{\monthname[\THEMONTH] \THEYEAR}
+
+% Used for images and figures
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+% Note: for organization purposes, leave the images in the images/ folder
+
+% Used for headers and footers
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+% Defines page style as fancy
+\pagestyle{fancy}
+
+% Used for figures and captions
+\usepackage[skip=6pt]{caption} % Skip is the distance between the image and caption
+\usepackage{float}
+% Create the list of figures
+\addto\captionsenglish{\renewcommand{\listfigurename}{Figures}}
+
+% Used for glossary
+\usepackage{glossaries}
+% Load the references from the glossary
+\input{content/glossary}
+
+% Used for cross-references and pdf customization
+% Define colors
+\usepackage{xcolor}
+% Link to URLs
+\usepackage{url}
+% Better LaTeX referencing
+\usepackage{hyperref}
+\hypersetup{
+    hidelinks, % hide the links in the references
+    linktocpage=true, % show links in table of contents page
+    colorlinks=false, % color the links themselves
+    citebordercolor={green}, % color of border on citations
+    linkbordercolor={red}, % color of border on links
+    urlbordercolor={cyan}, % color of border on URLs
+    bookmarksopen=true, % start document with bookmarks open
+    pdftitle={\projecttitle}, % title of pdf
+    pdfauthor={\studentname}, % authors
+}
+% For references of text elements with \Cref (e.g., figures, tables)
+\usepackage{cleveref}
+
+% Used for code snippets with syntax highlighting
+\usepackage{minted}
+% Define the color theme
+\usemintedstyle{one-dark}
+% Define a specific color
+\definecolor{bg}{HTML}{282C34}
+% Define a specific font
+\newfontfamily\courier{JetBrains Mono}[NFSSFamily=jetbrains]
+\setminted{
+    linenos, % line numbers in code snippets
+    fontfamily=jetbrains, % change the font
+    fontsize=\scriptsize, % change the font size
+    bgcolor={bg}, % change the background color
+    breaklines % break lines when they don't fit
+}
+
+% ACTUAL START OF THE DOCUMENT
+\begin{document}
+
+% Define the fancy header
+\fancyhead{}
+% Width of line in the header
+\renewcommand{\headrulewidth}{0.4pt}
+% Height of header section
+\setlength{\headsep}{24pt}
+% Heaight of header text
+\setlength{\headheight}{16pt}
+% Formatting of header (project title on the center)
+\fancyhead[C]{\small{\projecttitle}}
+
+% Define the fancy footer
+\fancyfoot{}
+% Width of line in the footer
+\renewcommand{\footrulewidth}{0.4pt}
+% Height of footer section
+\setlength{\footskip}{36pt}
+% Formatting of the footer (name on the left, page on the right)
+\fancyfoot[L]{\small{\studentname}}
+\fancyfoot[R]{\thepage /\pageref*{LastPage}}
+
+% Cover page
+\include{content/cover}
+
+% Define a simple page style and other page numbering
+\pagestyle{plain}
+\pagenumbering{Roman}
+
+% Table of Contents
+\tableofcontents
+\clearpage
+% List of Figures
+\listoffigures
+\clearpage
+
+% Define normal page style and numbering
+\pagestyle{fancy}
+\pagenumbering{arabic}
+
+% Glossary
+\printglossary
+% Manually specifying the Glossary Section
+\addcontentsline{toc}{section}{Glossary}
+\clearpage
+
+% Sections of the Report
+\include{content/1_introduction}
+\include{content/2_methodology}
+\include{content/3_development}
+\include{content/4_conclusion}
+
+% Reducing the text size
+\small
+
+% Bibliography and References
+\bibliographystyle{plain} 
+\bibliography{refs}
+ 
+\end{document}
