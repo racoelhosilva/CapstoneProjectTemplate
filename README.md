@@ -8,6 +8,10 @@ I first made this template during the Summer of 2024 for my Capstone Project and
 
 Hope you enjoy it, and feel free to make changes as needed :)
 
+<a href="https://pt.overleaf.com/read/xznjzqfhqzvk#fa81f5">
+  <img alt="Deploy" src="https://img.shields.io/badge/Overleaf_Template-47A141?style=for-the-badge&logo=overleaf&logoColor=FFFFFF">
+</a>
+
 ## Usage
 
 > [!IMPORTANT]  
@@ -16,17 +20,15 @@ Hope you enjoy it, and feel free to make changes as needed :)
 > However, if running this project locally, some more packages and setup might be necessary.
 
 Although this template can be used locally by simply cloning the repository, I recommend using Overleaf for the Capstone Project.
-<!--There are two ways to create an Overleaf project based on this template:-->
+There are two ways to create an Overleaf project based on this template:
 
-<!--
-### Method 1 - Overleaf Gallery Template
+### Method 1 - Copy Overleaf Project
 
-I've published this exact template into the Overleaf Gallery, where users can locate it and use it directly.~
+I've shared this exact template as a read-only Overleaf project, where users can create a copy and use it directly.
 
-1. Open the template link for this project
-2. Use template for new project
-3. Continue the project from there ~~
--->
+1. Open the [template link for this project](https://pt.overleaf.com/read/xznjzqfhqzvk#fa81f5).
+2. Open the top-left `Menu` > `(Actions) Copy Project`.
+3. Continue the project from there (you might want to change the title of the project).
 
 ### Zip/Import
 
@@ -43,6 +45,6 @@ This template was remade from scratch, but the overall structure was based on th
 - Appearance: the footers, headers, code blocks, and hyper-references have been slightly changed for a more modern look.
 - Customization: most settings can be easily changed in the `main.tex` file, which contains descriptions of most of the commands.
 
-A preview of this template can be seen **[here](example.pdf)**.
+A preview of this template can be seen **[here](example.pdf)** or **[here](https://pt.overleaf.com/read/xznjzqfhqzvk#fa81f5)**.
 
 > Best of luck on your Capstone Project :)
