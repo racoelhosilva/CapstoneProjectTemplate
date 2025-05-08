@@ -30,7 +30,7 @@ I've shared this exact template as a read-only Overleaf project, where users can
 2. Open the top-left `Menu` > `(Actions) Copy Project`.
 3. Continue the project from there (you might want to change the title of the project).
 
-### Zip/Import
+### Method 2 - Zip/Import
 
 1. Download this repository as a .zip file.
 2. In Overleaf, select `New Project` > `Upload Project` and import the .zip file.
